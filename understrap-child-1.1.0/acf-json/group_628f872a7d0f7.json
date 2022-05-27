@@ -1,0 +1,333 @@
+{
+    "key": "group_628f872a7d0f7",
+    "title": "Real Estate",
+    "fields": [
+        {
+            "key": "field_628f8974f7541",
+            "label": "Image",
+            "name": "image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "jpg, png, webp"
+        },
+        {
+            "key": "field_628f8760f753c",
+            "label": "Name",
+            "name": "name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_628f879df753d",
+            "label": "Location coordinates",
+            "name": "location_coordinates",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_628f87c3f753e",
+            "label": "Floors qty",
+            "name": "floors_qty",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "one": "1",
+                "two": "2",
+                "three": "3",
+                "four": "4",
+                "five": "5",
+                "six": "6",
+                "seven": "7",
+                "eight": "8",
+                "nine": "9",
+                "ten": "10",
+                "eleven": "11",
+                "twelve": "12",
+                "thirteen": "13",
+                "fourteen": "14",
+                "fifteen": "15",
+                "sizteen": "16",
+                "seventeen": "17",
+                "eighteen": "18",
+                "nineteen": "19",
+                "twenty": "20"
+            },
+            "default_value": "five",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_628f88c3f753f",
+            "label": "Building type",
+            "name": "building_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "panel": "Panel",
+                "brick": "Brick",
+                "foam_block": "Foam block"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "panel",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_628f8924f7540",
+            "label": "Environmental friendliness",
+            "name": "environmental_friendliness",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "one": "1",
+                "two": "2",
+                "three": "3",
+                "four": "4",
+                "five": "5"
+            },
+            "default_value": "four",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_628f89c8f7542",
+            "label": "Appartments",
+            "name": "appartments",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_628f89f2f7543",
+                    "label": "Area",
+                    "name": "area",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_628f8a13f7544",
+                    "label": "Rooms qty",
+                    "name": "rooms_qty",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "one": "1",
+                        "two": "2",
+                        "three": "3",
+                        "four": "4",
+                        "five": "5",
+                        "six": "6",
+                        "seven": "7",
+                        "eight": "8",
+                        "nine": "9",
+                        "ten": "10"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "three",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_628f8a81f7545",
+                    "label": "Balcony",
+                    "name": "balcony",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "yes": "Yes",
+                        "no": "No"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "yes",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_628f8acbf7546",
+                    "label": "Bathroom",
+                    "name": "bathroom",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "yes": "Yes",
+                        "no": "No"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "yes",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_628f8af5f7547",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "jpg, png, webp"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "estate"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "comments",
+        "revisions",
+        "send-trackbacks"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1653682639
+}

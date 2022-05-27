@@ -1,0 +1,93 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ 
+ 
+/* Filter Form */
+.estate-filter__form {
+	padding: 1.5rem;
+	border: 2px solid currentColor;
+}
+
+.estate-filter__form-wrap {
+	/*max-width: 360px;*/
+}
+
+.estate-filter__item + .estate-filter__item {
+	margin-top: 1rem
+}
+
+.estate-filter__item select {
+	width: 100%;
+	display: block;
+	line-height: 1.5;
+	padding: .375rem 2.25rem .375rem .75rem;
+	font-size: 1.25rem;
+	border-radius: .5rem;
+	color: inherit;
+	background-color: #fff;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+	background-repeat: no-repeat;
+	background-position: right .75rem center;
+	background-size: 16px 12px;
+	border: 1px solid #ced4da;
+	
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+
+.estate-filter__item .acf-radio-list {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+	
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.estate-filter__item input[type=radio],
+.estate-filter__item input[type=checkbox] {
+	margin-right: .25em;
+}
+
+
+
+/* card grid */
+.estate-filter__content {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+	gap: 1.5rem;
+}
+
+/* card info */
+.estate-card-meta { font-size: .8125rem}
+
+
+/* Pagination */
+.estate-pagination {
+	padding: 1rem 0;
+	background-color: #f5f7f9;
+	display: flex;
+	justify-content: center;
+	gap: .125em;
+}
+
+.estate-pagination .page-numbers {
+	position: relative;
+	display: inline-flex;
+	padding: .375rem .75rem;
+	color: var(--bs-pagination-color);
+	text-decoration: none;
+	background-color: white;
+	border: 1px solid #dee2e6;	
+}
+
+.estate-pagination .page-numbers.current {
+	background-color: transparent;
+	opacity: .45;
+}
