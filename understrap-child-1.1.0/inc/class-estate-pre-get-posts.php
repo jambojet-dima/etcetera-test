@@ -22,7 +22,7 @@ class NP_Estate_Ppre_Get_Posts
 	 * @access   private
 	 * @var      string    $order_field    ACF Field name | order posts by this field
 	 */
-	private $order_field = 'environmental_friendliness';
+	private $order_field;
 	
 	
 	/**
@@ -31,7 +31,7 @@ class NP_Estate_Ppre_Get_Posts
 	 * @access   private
 	 * @var      string    $order_value    accepts (DESC|ASC)
 	 */
-	private $order_value = 'ASC';
+	private $order_value;
 	
 	
 	

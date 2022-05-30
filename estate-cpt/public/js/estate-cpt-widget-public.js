@@ -30,8 +30,8 @@
 				
 				// Set Preloader
 				btnSubmit.disabled = true; // changing the button state
-				estateFilterContent.scrollIntoView({block: "start", behavior: "smooth"});
-				estateFilterContent.innerHTML = spinner;
+				estateFilterContent.scrollIntoView({block: "start", behavior: "smooth"}); // scroll to content
+				estateFilterContent.innerHTML = spinner; // show spinner
 				estatePaginationWrap.innerHTML = '';
 				
 				axios

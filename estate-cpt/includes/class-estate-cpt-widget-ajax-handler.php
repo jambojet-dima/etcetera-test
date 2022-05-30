@@ -31,9 +31,9 @@ class Estate_Cpt_Widget_Ajax_Handler
 		
 		//$handler->register_scripts();
 		add_action('wp_enqueue_scripts', array($handler, 'register_scripts') );
-		//add_action('wp_loaded', array($handler, 'register_script'));
 		
-		
+		// Filter ACF repeater fields
+		// @link https://www.advancedcustomfields.com/resources/query-posts-custom-fields/
 		add_filter( 'posts_where', array($handler, 'replace_appartments_repeater_field') );
 	}
 	
