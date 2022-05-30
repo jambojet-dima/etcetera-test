@@ -1,41 +1,7 @@
 (function(window, document, undefined) {
 	'use strict';
 
-	/**
-	 * All of the code for your public-facing JavaScript source
-	 * should reside in this file.
-	 *
-	 * Note: It has been assumed you will write jQuery code here, so the
-	 * $ function reference has been prepared for usage within the scope
-	 * of this function.
-	 *
-	 * This enables you to define handlers, for when the DOM is ready:
-	 *
-	 * $(function() {
-	 *
-	 * });
-	 *
-	 * When the window is loaded:
-	 *
-	 * $( window ).load(function() {
-	 *
-	 * });
-	 *
-	 * ...and/or other possibilities.
-	 *
-	 * Ideally, it is not considered best practise to attach more than a
-	 * single DOM-ready or window-load handler for a particular page.
-	 * Although scripts in the WordPress core, Plugins and Themes may be
-	 * practising this, we should strive to set a better example in our own work.
-	 */
-	 
-	 
-	 
-	 
-	//function get_pagination_page()
-	 
-	 
-	 
+	
 	document.addEventListener('DOMContentLoaded', () => {
 		
 		
@@ -64,6 +30,7 @@
 				
 				// Set Preloader
 				btnSubmit.disabled = true; // changing the button state
+				estateFilterContent.scrollIntoView({block: "start", behavior: "smooth"});
 				estateFilterContent.innerHTML = spinner;
 				estatePaginationWrap.innerHTML = '';
 				
@@ -78,12 +45,13 @@
 						estateFilterContent.querySelector(`.${spinnerClassname}`).remove();
 						if (!response.data.data.posts) return;
 						
-						estateFilterContent.insertAdjacentHTML('afterbegin', response.data.data.posts); // insert data
-						estateFilterContent.scrollIntoView({block: "start", behavior: "smooth"});
+						setTimeout( () => {
+							estateFilterContent.insertAdjacentHTML('afterbegin', response.data.data.posts); // insert data
+							if (response.data.data.pagination) {
+								estatePaginationWrap.insertAdjacentHTML('afterbegin', response.data.data.pagination); // insert data
+							}
+						}, 250);
 						
-						if (response.data.data.pagination) {
-							estatePaginationWrap.insertAdjacentHTML('afterbegin', response.data.data.pagination); // insert data
-						}
 					})
 					.catch(function (error) {
 						btnSubmit.disabled = false;

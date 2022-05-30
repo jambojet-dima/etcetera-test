@@ -272,7 +272,7 @@ class Estate_Cpt_Widget_Ajax_Handler
 
 		$big  = 999999999; // need an unlikely integer
 
-		$html = paginate_links(array(
+		$paginate_links = paginate_links(array(
 			//'base'       => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
 			'base' => site_url() . '%_%',
 			'format'     => '?paged=%#%',
@@ -283,7 +283,12 @@ class Estate_Cpt_Widget_Ajax_Handler
 			'next_text'  => __('Next »'),
 		));
 
-		$html = "<div class='estate-pagination'>" . $html . "</div>";
+
+		$html = '';
+		if ($paginate_links) {
+			$html = "<div class='estate-pagination'>" . $paginate_links . "</div>";
+		}
+		
 		return $html;
 	}
 	
