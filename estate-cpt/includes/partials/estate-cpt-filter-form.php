@@ -11,7 +11,9 @@
 		<div class="row">
 			<div class="col-12 col-md-6">
 			<?php
-			
+				// Paged Info for pagination
+				echo '<input class="js-estate-filter-item__paged" type="hidden" name="paged" value="1">';
+				
 				/* Generate Taxonomy Filters */
 				$taxonomy = 'district';
 				$terms = get_terms( array(

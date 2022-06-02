@@ -30,8 +30,8 @@
 				
 				// Set Preloader
 				btnSubmit.disabled = true; // changing the button state
-				estateFilterContent.scrollIntoView({block: "start", behavior: "smooth"}); // scroll to content
-				estateFilterContent.innerHTML = spinner; // show spinner
+				estateFilterContent.scrollIntoView({block: "start", behavior: "smooth"});
+				estateFilterContent.innerHTML = spinner;
 				estatePaginationWrap.innerHTML = '';
 				
 				axios
@@ -72,16 +72,10 @@
 				
 				// Get Paged Value
 				const url = new URL(event.target.href);
-				const number = url.searchParams.get('paged');
+				const number = url.searchParams.get('paged') || 1;
 				
-				// Create hidden input with paged value
-				const input = document.createElement("input");
-                input.type = 'hidden';
-                input.name = 'paged';
-				input.value = number;
-				
-				// Put input to the form
-				estateFilterForm.appendChild(input);
+				const inputPaged = estateFilter.getElementsByClassName('js-estate-filter-item__paged')[0];
+				if (inputPaged) inputPaged.value = number;
 				
 				// Submit form
 				btnSubmit.click();						
